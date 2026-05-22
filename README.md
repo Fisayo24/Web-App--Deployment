@@ -20,7 +20,7 @@ Here is my enterprise-grade implementation demonstrating Cloud-Native orchestrat
 The pipeline begins by containerizing the application context using an optimized Docker multi-stage configuration, ensuring absolute environment consistency from local testing to the public cloud.
 
 * **Asset Verification:** Building and tagging the underlying container layer locally.
-* ![Docker Image Build](./images/01-dockerfile-build.png)<img width="960" height="504" alt="01-dockerfile-build" src="https://github.com/user-attachments/assets/6aceb4b9-c19c-420a-a917-52a79832cdd4" />
+  <img width="960" height="504" alt="01-dockerfile-build" src="https://github.com/user-attachments/assets/6aceb4b9-c19c-420a-a917-52a79832cdd4" />
 
 ### 2. Helm Chart Blueprinting
 Instead of managing fragmented, static Kubernetes manifests, the architecture utilizes a single parameterized Helm chart. This packages standard resources (Deployments, Services) into dynamic components.
