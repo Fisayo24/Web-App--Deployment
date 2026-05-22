@@ -1,3 +1,4 @@
+<img width="960" height="504" alt="01-dockerfile-build" src="https://github.com/user-attachments/assets/6aceb4b9-c19c-420a-a917-52a79832cdd4" />
 # Web-App--Deployment
 # Enterprise Multi-Environment Web App Deployment Pipeline with Helm & Kubernetes
 
