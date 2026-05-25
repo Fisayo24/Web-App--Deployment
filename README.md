@@ -43,6 +43,15 @@ To protect active cluster runtimes, strict schema validation and structural pars
 * **Asset Verification:** Dry-run evaluation generating a scaled-out (`replicaCount: 3`) Production manifest.
 ![Helm Dry-Run Validation](/images/03-helm-dry-run.png)
 
+## ☸️ Phase 3: Local Helm Orchestration & Value Injection
+
+To eliminate static Kubernetes manifest management, the deployment layer was modularized into a custom Helm chart. This setup replaces hardcoded configurations with dynamic templating, allowing the application to scale across different environments via custom `values.yaml` overlays.
+
+* **Local Target Port:** Scaled and exposed locally via `localhost:3000`
+* **Environment Context:** Injected as `Development` to validate local parameter overrides
+
+![Helm Local Verification](./images/03-helm-local-verification.png)
+
 ### 4. Live Cluster Deployment & Lifespan Monitoring
 Once validated, Helm coordinates live creation instructions directly to the cluster control plane. Workloads are dynamically separated: Staging runs as a single instance behind a secure internal IP, while Production scales wide.
 
