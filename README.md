@@ -28,6 +28,15 @@ Instead of managing fragmented, static Kubernetes manifests, the architecture ut
 * **Asset Verification:** Standardized Helm package and templates directory structure.
 ![Helm Directory Layout](./images/02-helm-chart-structure.png)
 
+## 🐳 Phase 2: Local Containerization & Verification
+
+To guarantee environment parity across development and production, the application tier was containerized using Docker. The build was validated locally to verify runtime stability, dependencies, and internal port exposures before pushing to the container registry.
+
+* **Target Port:** Exposed on internal container port `80`
+* **Verification:** Validated via local container runtime environment
+
+![Docker Local Verification](./images/02-docker-local-verification.png)
+
 ### 3. Pre-Flight Emulation & Simulation (Dry-Runs)
 To protect active cluster runtimes, strict schema validation and structural parsing are executed via Helm dry-runs before touching real infrastructure. This confirms that templates evaluate correctly with environment-specific overrides.
 
