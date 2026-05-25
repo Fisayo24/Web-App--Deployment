@@ -32,7 +32,7 @@ Instead of managing fragmented, static Kubernetes manifests, the architecture ut
 To protect active cluster runtimes, strict schema validation and structural parsing are executed via Helm dry-runs before touching real infrastructure. This confirms that templates evaluate correctly with environment-specific overrides.
 
 * **Asset Verification:** Dry-run evaluation generating a scaled-out (`replicaCount: 3`) Production manifest.
-![Helm Dry-Run Validation](./images/03-helm-dry-run.png)
+![Helm Dry-Run Validation](/images/03-helm-dry-run.png)
 
 ### 4. Live Cluster Deployment & Lifespan Monitoring
 Once validated, Helm coordinates live creation instructions directly to the cluster control plane. Workloads are dynamically separated: Staging runs as a single instance behind a secure internal IP, while Production scales wide.
