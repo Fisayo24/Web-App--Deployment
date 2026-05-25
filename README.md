@@ -1,7 +1,7 @@
 # Web-App--Deployment
 # Enterprise Multi-Environment Web App Deployment Pipeline with Helm & Kubernetes
 
-Here is my enterprise-grade implementation demonstrating Cloud-Native orchestration using **Helm** to package, configure, and dynamically deploy a highly available web application across isolated **Staging** and **Production** environments on **Kubernetes (AWS EKS)**.
+Here is my enterprise-grade implementation demonstrating Cloud-Native orchestration using **Helm** to package, configure, and deploy a highly available web application across isolated **Staging** and **Production** environments on **Kubernetes (AWS EKS)**.
 
 ## Key Engineering Capabilities Demonstrated
 * **Infrastructure as Code (IaC):** Designed dynamic Helm templates to remove hardcoded application values.
