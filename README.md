@@ -38,7 +38,7 @@ To protect active cluster runtimes, strict schema validation and structural pars
 Once validated, Helm coordinates live creation instructions directly to the cluster control plane. Workloads are dynamically separated: Staging runs as a single instance behind a secure internal IP, while Production scales wide.
 
 * **Asset Verification:** Monitoring healthy, actively running application pods across environments.
-![Kubernetes Active Pods](./images/04b-kubernetes-pods-healthy.png)
+![Kubernetes Active Pods](./images/04-helm-live-pods.png)
 
 ### 5. Cloud Routing & Public Validation (The Result)
 The ultimate validation proves edge network routing. Kubernetes interfaces directly with the AWS cloud provider API to automatically provision and map external load balancing routing tables, opening the application to verified traffic.
