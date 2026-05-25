@@ -44,7 +44,7 @@ Once validated, Helm coordinates live creation instructions directly to the clus
 The ultimate validation proves edge network routing. Kubernetes interfaces directly with the AWS cloud provider API to automatically provision and map external load balancing routing tables, opening the application to verified traffic.
 
 * **Asset Verification:** Production environment running live on the public internet behind an active AWS Load Balancer.
-![Live Production AWS Deployment](./images/05-production-aws-live.png)
+![Public Internet Validation](./images/05-public-validation.png)
 
 ---
 
